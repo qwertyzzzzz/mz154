@@ -31,7 +31,7 @@ for (let redT of redTask){
 }
 //появление "дел нет"
 function hidespisok(){
-if(taskList.children.length>1)
+/*if(taskList.children.length>1)
 {
     document.getElementById('empty-list-item').style.visibility = "hidden";
 }
@@ -39,7 +39,7 @@ else{
     document.getElementById('empty-list-item').style.visibility ="visible";
 }
   saveData();
-}
+}*/
 //добавление новой задачи
 let form = document.querySelector('#newTaskForm');
 let taskText = document.querySelector('#addNewTask');
