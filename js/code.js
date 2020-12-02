@@ -14,7 +14,7 @@ for (let delT of delTask){
    }
   saveData();
 }
-//выполнено
+//выполнен
 let redTask = document.getElementsByClassName('ready'); 
 for (let redT of redTask){
     redT.onclick = function() {
