@@ -11,7 +11,7 @@ function loadData(){
   }
 }
 loadData();
-hidespisok();
+//hidespisok();
 //удаление
 let delTask = document.getElementsByClassName('delete-task');
 for (let delT of delTask){
@@ -20,7 +20,7 @@ for (let delT of delTask){
     div.innerHTML = '';
     let ul = div.parentElement;
     ul.removeChild(div);
-    hidespisok();
+    //hidespisok();
    }
   saveData();
 }
@@ -41,7 +41,7 @@ for (let redT of redTask){
 }
 //появление "дел нет"
 /*function hidespisok(){
-if(taskList.children.length>1)
+if(document.ul.children.length>1)
 {
     document.getElementById('empty-list-item').style.visibility = "hidden";
 }
@@ -77,7 +77,7 @@ for (let delT of delTask) {
     div.innerHTML = '';
     let ul = div.parentElement;
      ul.removeChild(div);
-    hidespisok();
+    //hidespisok();
     }
   }
 for (let redT of redTask) {
