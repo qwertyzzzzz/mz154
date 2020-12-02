@@ -1,5 +1,5 @@
 "use strict";
-const taskList = document.querySelector('ul');
+const taskList = document.getElementById('list-group');
 //сохранение
 function saveData(){
   localStorage.setItem('todoList',taskList.innerHTML);
@@ -51,9 +51,9 @@ else{
   saveData();
 }*/
 //добавление новой задачи
-let form = document.querySelector('#newTaskForm');
-let taskText = document.querySelector('#addNewTask');
-let firstel = document.querySelector('#empty-list-item');
+let form = document.getElementById('newTaskForm');
+let taskText = document.getElementById('addNewTask');
+let firstel = document.getElementById('empty-list-item');
 function newElement(event){
 
     event.preventDefault();
