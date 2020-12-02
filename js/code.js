@@ -31,7 +31,8 @@ for (let redT of redTask){
 }
 //появление "дел нет"
 function hidespisok(){
-if(document.querySelector('ul').children.length>1)
+let spz=document.querySelector('ul');
+if(spz.children.length>1)
 {
     document.getElementById('empty-list-item').style.visibility = "hidden";
 }
