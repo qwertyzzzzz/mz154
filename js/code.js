@@ -30,8 +30,8 @@ for (let redT of redTask){
   saveData();
 }
 //появление "дел нет"
-function hidespisok(){
-/*if(taskList.children.length>1)
+/*function hidespisok(){
+if(taskList.children.length>1)
 {
     document.getElementById('empty-list-item').style.visibility = "hidden";
 }
