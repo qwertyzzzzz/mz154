@@ -1,5 +1,15 @@
 "use strict";
 const taskList = document.querySelector('ul');
+//сохранение
+function saveData(){
+  localStorage.setItem('todoList',taskList.innerHTML);
+}
+//загрузка
+function loadData(){
+  if(localStorage.getItem('todoList')){
+    taskList.innerHTML = localStorage.getItem('todoList');
+  }
+}
 loadData();
 hidespisok();
 //удаление
@@ -84,13 +94,3 @@ for (let redT of redTask) {
 }
 form.addEventListener('submit',newElement);
 saveData();
-//сохранение
-function saveData(){
-  localStorage.setItem('todoList',taskList.innerHTML);
-}
-//загрузка
-function loadData(){
-  if(localStorage.getItem('todoList')){
-    taskList.innerHTML = localStorage.getItem('todoList');
-  }
-}
