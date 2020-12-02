@@ -1,5 +1,5 @@
 "use strict";
-let taskList = document.querySelector('ul');
+const taskList = document.querySelector('ul');
 loadData();
 hidespisok();
 //удаление
@@ -31,8 +31,7 @@ for (let redT of redTask){
 }
 //появление "дел нет"
 function hidespisok(){
-let spz=document.querySelector('ul');
-if(spz.children.length>1)
+if(taskList.children.length>1)
 {
     document.getElementById('empty-list-item').style.visibility = "hidden";
 }
